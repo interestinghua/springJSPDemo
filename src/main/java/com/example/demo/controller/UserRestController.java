@@ -24,7 +24,6 @@ public class UserRestController {
     @RequestMapping("/")
     public String index() {
         return "redirect:/list";
-        // return "redirect:/hello";
     }
 
     @RequestMapping("/list")
