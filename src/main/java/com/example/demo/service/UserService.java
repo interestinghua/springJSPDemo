@@ -21,7 +21,6 @@ public interface UserService {
      */
     boolean updateUser(User user);
 
-
     /**
      * 删除用户
      * @param id

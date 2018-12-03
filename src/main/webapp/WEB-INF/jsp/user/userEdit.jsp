@@ -16,7 +16,7 @@
 <form action="/edit" name="userForm" method="post">
     <input type="hidden" name="id" value="${user.id }"/>
     姓名：<input type="text" name="name" value="${user.name }"/>
-    密码：<input type="text" name="name" value="${user.password }"/>
+    密码：<input type="text" name="password" value="${user.password }"/>
     年龄：<input type="text" name="age" value="${user.age }"/>
     <input type="submit" value="提交" />
     &nbsp; &nbsp; &nbsp;

@@ -50,7 +50,7 @@ public class UserRestController {
     @RequestMapping("/toEdit")
     public String toEdit(Model model, Long id) {
         Optional<User> user = userService.findUserById(id);
-        model.addAttribute("user", user);
+        model.addAttribute("user", user.get());
         return "user/userEdit";
     }
 

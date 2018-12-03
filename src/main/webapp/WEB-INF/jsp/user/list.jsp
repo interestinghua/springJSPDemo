@@ -31,7 +31,7 @@
                     <td>${user.name}</td>
                     <td>${user.password}</td>
                     <td>${user.age}</td>
-                    <td><a href="<%=basePath%>/toEdit?id=${user.id}">编辑</a></td>
+                    <td><a href="<%=basePath%>toEdit?id=${user.id}">编辑</a></td>
                     <td><a href="<%=basePath%>/toDelete?id=${user.id}">删除</a></td>
                 </tr>
             </c:forEach>
