@@ -37,7 +37,7 @@
             </c:forEach>
         </c:if>
         </tbody>
-        <h6><a href="<%=basePath%>/toAdd">添加用户</a></h6>
+        <h6><a href="<%=basePath%>toAdd">添加用户</a></h6>
     </table>
 </div>
 </body>
