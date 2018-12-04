@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,12 +22,12 @@ public class UserRestController {
         return "hello";
     }
 
-    @RequestMapping("/")
+    @RequestMapping(value = "/springJSP/", method = RequestMethod.GET)
     public String index() {
         return "redirect:/list";
     }
 
-    @RequestMapping("/list")
+    @RequestMapping(value = "/springJSP/list", method = RequestMethod.GET)
     public String list(Model model) {
         System.out.println("查询所有");
         List<User> users = userService.findAll();
