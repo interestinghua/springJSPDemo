@@ -22,12 +22,12 @@ public class UserRestController {
         return "hello";
     }
 
-    @RequestMapping(value = "/springJSP/", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
         return "redirect:/list";
     }
 
-    @RequestMapping(value = "/springJSP/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model) {
         System.out.println("查询所有");
         List<User> users = userService.findAll();
